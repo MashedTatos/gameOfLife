@@ -4,17 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.Drawing;
 namespace conwaysGameOfLife
 {
     class Program
     {
-
+        public static ConsoleColor[] colors = new ConsoleColor[] { ConsoleColor.Red, ConsoleColor.Green};
         //Seeding new random number
         public static Random random = new Random();
         static void Main(string[] args)
         {
+
+            
+            /*Bitmap myBitmap = new Bitmap(300, 300);
+            myBitmap.SetResolution(200, 200);*/
+            
             //Console prompts
-            Console.WriteLine("Enter in size. Recommend 20 x 20 and 50 x 50 if you go full screen as anything to big kinda hurts your eyes and is slow. ");
+
+            Console.WriteLine("Enter in size. Recommend 20 x 20 or 50 x 50 if you go full screen as anything to big kinda hurts your eyes and is slow. ");
             Console.WriteLine("Width: ");
             int width = Convert.ToInt32( Console.ReadLine());
 
@@ -22,14 +29,14 @@ namespace conwaysGameOfLife
             int height = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
 
-            Console.WriteLine("Sleep time (ms) Recommend 100: ");
+            Console.WriteLine("Sleep time (ms) Recommend 100 (25 for 50 x 50 and fullscreen): ");
             int speed = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
 
             Console.WriteLine("Generations: (-1 for no limit): ");
             int gens = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
-
+            Console.CursorVisible = false;
 
             //Initializing new cell world
             cell[,] cells = init(width, height);
@@ -46,7 +53,9 @@ namespace conwaysGameOfLife
             
             if (currentGen == gens)
             {
+                
                 Console.WriteLine("Simulation finished");
+                
             }
 
             else
@@ -113,14 +122,19 @@ namespace conwaysGameOfLife
         public static void draw(cell[,] cells)
         {
 
+            
+
             //Loops through array
             for (int x = 0; x < cells.GetLength(0); x++)
             {
                 
                 for (int y = 0; y < cells.GetLength(1); y++)
                 {
-                    //Write row
-                    Console.Write(cells[x, y].getState());
+                    Console.ForegroundColor = colors[cells[x, y].getState() % 2];
+                    Console.Write('*');
+                    
+                    
+
                 }
 
                 //New column so create new line
