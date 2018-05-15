@@ -1,0 +1,2 @@
+To run file windows go to dist folder and type "java -jar conwaysGameOfLife.jar". I have created a command files to make this easier. One for mac and one for windows.
+Windows .batch should run fine but for mac you might have to change permissions in command line ("chmod +x run-mac.command")
