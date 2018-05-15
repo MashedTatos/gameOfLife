@@ -1,6 +1,7 @@
 
 (setq *print-case* :capitalize)
-
+(defvar *height* 30)
+(defvar *width* 30)
 (print "How many generations?")
 (defvar *gens* (read))
 
@@ -31,19 +32,19 @@
 	(setf rand (round(random 1.0)))
 )
 
-(defvar *world* (make-array '(50 50)))
+(defvar *world* (make-array '(30 30)))
 
 
 (defun init ()
-	(dotimes(x 50)
-		(dotimes(y 50)
+	(dotimes(x *height*)
+		(dotimes(y *width*)
 			(setf *random-state* (make-random-state nil))
 			(setf (aref *world* x y) (make-instance 'cell :state (get-random) :next-state 0))
 				)))
 
 (defun draw()
-	(dotimes (x 50)
-		(dotimes (y 50)
+	(dotimes (x *height*)
+		(dotimes (y *width*)
 				(prin1(get-state (aref *world* x y)))	
 				)
 			(print "")
@@ -87,8 +88,8 @@
 
 
 (defun get-neighbor-state(x y offsetx offsety)
-	(setf height 50)
-	(setf width 50)
+	(setf height *height*)
+	(setf width *width*)
 	(setf row (mod(+ x (+ offsetx width)) width))
 	(setf col (mod(+ y(+ offsety height)) height))
 
@@ -98,13 +99,13 @@
 )
 
 (defun next-gen()
-	(dotimes (x 50)
-		(dotimes (y 50)
+	(dotimes (x *height*)
+		(dotimes (y *width*)
 			(calc-next-state x y)
 			)
 		)
-	(dotimes (x 50)
-		(dotimes (y 50)
+	(dotimes (x *height*)
+		(dotimes (y *width*)
 			(setf cell (aref *world* x y))
 			(set-state cell (get-next-state cell))
 			)
