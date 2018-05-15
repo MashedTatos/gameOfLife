@@ -16,4 +16,4 @@ The rules (taken from the wiki):
 wiki: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 
-IT IS RECCOMENDED TO RUN C# VERSION
+IT IS RECOMENDED TO RUN C# VERSION
