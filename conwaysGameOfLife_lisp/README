@@ -1,2 +1,3 @@
 To run program double click on "gameOfLife.fas" or type clsip gameOfLife.lisp in your console when inside directory
 Please remember that due to langauge limitations im not able to control the console so freely like I am in c#. So I have set the height and the width to be 30 x 30
+to make it easier to see
