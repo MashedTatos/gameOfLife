@@ -1,9 +1,6 @@
 
 (setq *print-case* :capitalize)
-(print "Height")
-(defvar *height* (read))
-(print "Width")
-(defvar *width* (read))
+
 (print "How many generations?")
 (defvar *gens* (read))
 
