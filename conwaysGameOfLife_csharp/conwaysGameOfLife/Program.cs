@@ -16,8 +16,7 @@ namespace conwaysGameOfLife
         {
 
             
-            /*Bitmap myBitmap = new Bitmap(300, 300);
-            myBitmap.SetResolution(200, 200);*/
+            
             
             //Console prompts
 

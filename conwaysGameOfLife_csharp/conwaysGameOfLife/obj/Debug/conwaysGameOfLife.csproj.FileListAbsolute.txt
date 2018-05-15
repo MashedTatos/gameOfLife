@@ -1,0 +1,12 @@
+d:\users\nathan\documents\visual studio 2017\Projects\conwaysGameOfLife\conwaysGameOfLife\obj\Debug\conwaysGameOfLife.csprojResolveAssemblyReference.cache
+d:\users\nathan\documents\visual studio 2017\Projects\conwaysGameOfLife\conwaysGameOfLife\bin\Debug\conwaysGameOfLife.exe.config
+d:\users\nathan\documents\visual studio 2017\Projects\conwaysGameOfLife\conwaysGameOfLife\bin\Debug\conwaysGameOfLife.exe
+d:\users\nathan\documents\visual studio 2017\Projects\conwaysGameOfLife\conwaysGameOfLife\bin\Debug\conwaysGameOfLife.pdb
+d:\users\nathan\documents\visual studio 2017\Projects\conwaysGameOfLife\conwaysGameOfLife\obj\Debug\conwaysGameOfLife.exe
+d:\users\nathan\documents\visual studio 2017\Projects\conwaysGameOfLife\conwaysGameOfLife\obj\Debug\conwaysGameOfLife.pdb
+D:\Users\Nathan\Documents\Visual Studio 2017\Projects\conwaysGameOfLife_Console\conwaysGameOfLife\bin\Debug\conwaysGameOfLife.exe.config
+D:\Users\Nathan\Documents\Visual Studio 2017\Projects\conwaysGameOfLife_Console\conwaysGameOfLife\bin\Debug\conwaysGameOfLife.exe
+D:\Users\Nathan\Documents\Visual Studio 2017\Projects\conwaysGameOfLife_Console\conwaysGameOfLife\bin\Debug\conwaysGameOfLife.pdb
+D:\Users\Nathan\Documents\Visual Studio 2017\Projects\conwaysGameOfLife_Console\conwaysGameOfLife\obj\Debug\conwaysGameOfLife.csprojResolveAssemblyReference.cache
+D:\Users\Nathan\Documents\Visual Studio 2017\Projects\conwaysGameOfLife_Console\conwaysGameOfLife\obj\Debug\conwaysGameOfLife.exe
+D:\Users\Nathan\Documents\Visual Studio 2017\Projects\conwaysGameOfLife_Console\conwaysGameOfLife\obj\Debug\conwaysGameOfLife.pdb
